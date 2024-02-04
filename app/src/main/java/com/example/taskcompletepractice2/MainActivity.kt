@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    FinalScreen("Android")
+                    FinalScreen()
                 }
             }
         }
@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun FinalScreen(name: String, modifier: Modifier = Modifier) {
+fun FinalScreen(modifier: Modifier = Modifier) {
 
     val img = painterResource(R.drawable.ic_task_completed)
 
@@ -69,6 +69,6 @@ fun FinalScreen(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     TaskCompletePractice2Theme {
-        FinalScreen("Android")
+        FinalScreen()
     }
 }
